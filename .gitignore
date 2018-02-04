@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+#BOOK
+
+NODEJS_DESIGN_PATTERNS_SECOND_EDITION.pdf
