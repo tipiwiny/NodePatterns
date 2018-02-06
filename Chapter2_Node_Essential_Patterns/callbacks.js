@@ -17,4 +17,19 @@ console.log('after');
 //Callback => Non-continuation-passing style callbacks
 
 const sumTotal = [2,5,6].reduce((acum, key) => acum + key)
-console.log(`This is Synchronous ${sumTotal}``)
+console.log(`This is Synchronous ${sumTotal}`)
+
+
+// unpredicible function
+
+const values = [1,2,3,4,5,6,7,8,9]
+
+const isEvenOrOdd = (value, cb) => {
+  if(value % 2 === 0) {
+    return cb('par')
+  } else {
+    setTimeout(() => cb('impar'), 200)
+  }
+}
+
+values.forEach(key => isEvenOrOdd(key,(result) => console.log(`The number ${key} is ${result}`)))
