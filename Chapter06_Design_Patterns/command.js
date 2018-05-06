@@ -28,7 +28,7 @@ const DivCommand = function (value) {
 };
 
 const Calculator = function () {
-    const current = 0;
+    let current = 0;
     const commands = [];
 
     function action(command) {
@@ -83,3 +83,5 @@ const run = () => {
     log.add("\nValue: " + calculator.getCurrentValue());
     log.show();
 }
+
+run()
