@@ -8,7 +8,7 @@ function Product(name, price) {
 }
 
 function Food(name, price) {
-  Product.call(name, price);
+  Product.call(this,name, price);
   this.category = 'food';
 }
 Food.prototype = new Product();
